@@ -17,7 +17,7 @@ import Img from '../components/img.astro'
           <button
             type="button"
             x-on:click="isOpen = !isOpen"
-            class="inline-flex items-center justify-center p-2 rounded-md text-green-700 hover:text-pink-600 hover:bg-green-200 dark:text-green-300 dark:hover:text-pink-300 dark:hover:bg-green-800 dark:focus:ring-green-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-300"
+            class="inline-flex items-center justify-center p-2 rounded-md text-green-700 hover:text-pink-400 hover:bg-green-200 dark:text-green-300 dark:hover:text-pink-300 dark:hover:bg-green-800 dark:focus:ring-green-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-300"
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
@@ -53,8 +53,8 @@ import Img from '../components/img.astro'
                     class={
                       (item.href.length > 0 &&
                       Astro.url.toString().includes(item.href)
-                        ? 'bg-green-200 text-pink-600 dark:bg-green-800 dark:text-pink-300'
-                        : 'text-green-700 hover:bg-green-200 hover:text-pink-600 dark:text-green-200 dark:hover:bg-green-800 dark:hover:text-pink-300') +
+                        ? 'bg-green-200 text-pink-400 dark:bg-green-800 dark:text-pink-300'
+                        : 'text-green-700 hover:bg-green-200 hover:text-pink-400 dark:text-green-200 dark:hover:bg-green-800 dark:hover:text-pink-300') +
                       ' px-2 py-2 rounded-md text-lg font-medium'
                     }
                     aria-current={
@@ -104,8 +104,8 @@ import Img from '../components/img.astro'
               href={import.meta.env.BASE_URL + item.href}
               class:list={[
                 item.href.length > 0 && Astro.url.toString().includes(item.href)
-                  ? 'bg-green-200 text-pink-600 dark:bg-green-800 dark:text-pink-300'
-                  : 'text-green-700 hover:bg-green-200 hover:text-pink-600 dark:text-green-200 dark:hover:bg-green-800 dark:hover:text-pink-300',
+                  ? 'bg-green-200 text-pink-400 dark:bg-green-800 dark:text-pink-300'
+                  : 'text-green-700 hover:bg-green-200 hover:text-pink-400 dark:text-green-200 dark:hover:bg-green-800 dark:hover:text-pink-300',
                 ' px-2',
               ]}
               aria-current={
