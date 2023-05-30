@@ -10,90 +10,72 @@ export interface TagType {
 }
 
 export const SiteMetadata = {
-  title: 'Hello Astro',
-  description: 'An Astro starter for corporate/marketing/blog websites.',
+  title: 'Customer Operations Consultants',
+  description: 'Helping B2B companies with complex technical onboarding and support processes to scale their customer operations',
   author: {
-    name: 'Chris Tham',
-    twitter: '@chris1tham',
-    url: 'https://christham.net',
-    email: 'chris@christham.net',
-    summary: 'Outrageous actualiser.',
+    name: 'Mariena Quintanilla',
+    twitter: '@la_mariena',
+    url: 'https://www.customeroperationsconsultants.com',
+    email: 'web@customeroperationsconsultants.com',
+    summary: 'Customer Operations Leader',
   },
   org: {
-    name: 'Hello Tham',
-    twitter: '@hellothamcom',
-    url: 'https://hellotham.com',
-    email: 'info@hellotham.com',
+    name: 'Customer Operations Consultants',
+    twitter: '',
+    url: 'https://www.customeroperationsconsultants.com',
+    email: 'info@customeroperationsconsultants.com',
     summary:
-      'Hello Tham is a boutique management consulting firm. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.',
+      'Customer Operations Consultants is a management consulting firm that specializes in organizational development, customer onboarding, customer support and integrations.  We prioritize customer experience but deliver solutions that help organizations scale their business',
   },
-  location: 'Rivendell, Middle Earth',
-  latlng: [-33.86785, 151.20732] as [number, number],
+  location: 'Los Angeles, CA',
+  latlng: [34.02060,-118.74137] as [number, number],
   repository: 'https://github.com/hellotham/hello-astro',
   social: [
     {
       name: 'Email',
-      link: 'mailto:info@hellothamcom',
+      link: 'info@customeroperationsconsultants.com',
       icon: 'envelope',
     },
     {
-      name: 'Phone',
-      link: '555-5555',
-      icon: 'telephone',
-    },
-    {
       name: 'LinkedIn',
-      link: 'https://www.linkedin.com/hellothamcom',
+      link: 'https://www.linkedin.com/in/mariena',
       icon: 'linkedin',
     },
     {
-      name: 'Facebook',
-      link: 'https://www.facebook.com/hellothamcom',
-      icon: 'facebook',
-    },
-    {
-      name: 'Instagram',
-      link: 'https://www.instagram.com/hellothamcom',
-      icon: 'instagram',
-    },
-    {
-      name: 'Twitter',
-      link: 'https://twitter.com/hellothamcom',
-      icon: 'twitter',
-    },
-    {
-      name: 'Github',
-      link: 'https://github.com/hellothamcom',
-      icon: 'github',
-    },
+      name: 'Schedule a call',
+      link: 'https://customeroperationsconsultants.hbportal.co/schedule/6467d06d0d20ae1827edcd8d',
+      icon: 'calendar'
+    }
   ],
   buildTime: new Date(),
 }
 
-export const Logo = '../images/svg/astro/logomark-light.svg'
-export const LogoImage = '../images/astro/full-logo-light.png'
-export const FeaturedSVG = '../images/svg/undraw/undraw_design_inspiration.svg'
+export const Logo = '../images/customcolor_icon_transparent_background.svg'
+export const LogoImage = '../images/base_icon_transparent_background.png'
+export const FeaturedSVG = '../images/svg/undraw/undraw_team_collaboration_re_ow29.svg'
 export const DefaultSVG = '../images/svg/undraw/undraw_my_feed.svg'
 export const DefaultImage = '../images/undraw/undraw_my_feed.png'
+export const cac_logo = '../images/base_icon_transparent_background.png'
 
 export const NavigationLinks = [
   { name: 'Home', href: '' },
   { name: 'About', href: 'about' },
-  { name: 'Contact', href: 'contact' },
+  { name: 'Services', href: 'services' },
   { name: 'Blog', href: 'blog' },
-  { name: 'Docs', href: 'doc/introduction' },
+  { name: 'Resources', href: 'resources' },
+  { name: 'Contact', href: 'contact' },
 ]
 
 export const CategoryDetail = [
   {
     category: 'instructions',
-    coverSVG: '../images/svg/undraw/undraw_instruction_manual.svg',
+    coverSVG: '../images/svg/undraw/undraw_team_collaboration_re_ow29.svg',
     socialImage: '../images/undraw/undraw_instruction_manual.png',
     description: 'Guidelines on using this starter.'
   },
   {
     category: 'information',
-    coverSVG: '../images/svg/undraw/undraw_instant_information.svg',
+    coverSVG: '../images/svg/undraw/undraw_team_collaboration_re_ow29.svg',
     socialImage: '../images/undraw/undraw_instant_information.png',
     description: 'Information articles.'
   },

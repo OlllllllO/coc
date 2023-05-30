@@ -1,8 +1,22 @@
 ---
 import Img from '../components/img.astro'
+import { cac_logo } from '../config'
 import { FeaturedSVG } from '../config'
 ---
+<style is:global>
+  /* Register your custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: 'Qliche';
+  src: url('/fonts/Qliche.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
+h1 {
+  font-family: 'Qliche';
+}
+</style>
 <div class="relative bg-white dark:bg-gray-900 overflow-hidden">
   <div class="max-w-7xl mx-auto">
     <div
@@ -22,34 +36,24 @@ import { FeaturedSVG } from '../config'
       >
         <div class="text-center sm:text-left">
           <h1
-            class="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-gray-100 sm:text-5xl md:text-6xl text-left"
+            class="text-4xl tracking-tight text-green-800 sm:text-5xl md:text-6xl text-left"
           >
-            <span class="block xl:inline">hello</span>{' '}
-            <span class="block text-green-700 dark:text-green-300 xl:inline"
-              >Astro
-            </span>
+          Customer Operations Consultants
           </h1>
           <p
             class="mt-3 text-base text-gray-600 dark:text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
           >
-            Hello Astro is a multi-purpose starter theme written in Typescript,
-            TailwindCSS, AlpineJS and Astro. It supports Markdown and MDX based
-            pages, documentation pages and blog posts (including math and
-            diagrams), plus full text search.
+            Customer Operations Consultants is an independnt management consulting 
+            firm that helps B2B companies with complex technical onboarding and 
+            support processes to scale their customer operations.  
           </p>
           <p
             class="mt-3 text-base text-gray-600 dark:text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
           >
-            Hello Astro can be used for creating corporate/marketing sites,
-            blogs, documentation sites, portfolio sites (supporting photo
-            galleries) or any combination of the above!
-          </p>
-          <p
-            class="mt-3 text-base text-gray-600 dark:text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-          >
-            It has full SEO support for Facebook (Open Graph) tags, Twitter
-            Cards and Schema/JSON-LD metadata. It also features fully auto
-            generated RSS feed and sitemap for search engine indexing.
+            Founded by Mariena Quintanilla, we offer both strategic and 
+            enablement services to help you standardize your offerings and 
+            build the behind-the-scenes customer organization, processes 
+            and tools to grow your business.
           </p>
           <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
@@ -61,14 +65,14 @@ import { FeaturedSVG } from '../config'
               </a>
             </div>
             <div class="mt-3 sm:mt-0 sm:ml-3">
-              <a
-                href="https://github.com/sponsors/hellotham"
-                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-800 bg-green-100 hover:bg-pink-200 dark:text-green-100 dark:bg-green-900 dark:hover:bg-pink-400 md:py-4 md:text-lg md:px-10"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Sponsor Us
-              </a>
+              <div class="rounded-md shadow">
+                <a
+                  href="/services"
+                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-700 hover:bg-pink-400 dark:text-black dark:bg-green-300 dark:hover:bg-pink-300 md:py-4 md:text-lg md:px-10"
+                >
+                  Services
+                </a>
+              </div>
             </div>
           </div>
         </div>
