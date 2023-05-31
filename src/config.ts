@@ -14,16 +14,16 @@ export const SiteMetadata = {
   description: 'Helping B2B companies with complex technical onboarding and support processes to scale their customer operations',
   author: {
     name: 'Mariena Quintanilla',
-    twitter: '@la_mariena',
+    twitter: '',
     url: 'https://www.customeroperationsconsultants.com',
-    email: 'web@customeroperationsconsultants.com',
+    email: 'mailto:web@customeroperationsconsultants.com',
     summary: 'Customer Operations Leader',
   },
   org: {
     name: 'Customer Operations Consultants',
     twitter: '',
     url: 'https://www.customeroperationsconsultants.com',
-    email: 'info@customeroperationsconsultants.com',
+    email: 'mailto:info@customeroperationsconsultants.com',
     summary:
       'Customer Operations Consultants is a management consulting firm that specializes in organizational development, customer onboarding, customer support and integrations.  We prioritize customer experience but deliver solutions that help organizations scale their business',
   },
@@ -96,7 +96,7 @@ export function categoryDetail(category: string | undefined) {
 }
 export const AuthorDetail = [
   {
-    name: 'Chris Tham',
+    name: 'Mariena Quintanilla',
     description: 'Hello World',
     contact: 'chris@christham.net',
     image: '../images/authors/Chris Tham.jpg'

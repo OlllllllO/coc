@@ -1,29 +1,29 @@
 ---
 import { Icon } from 'astro-icon'
-import { SiteMetadata, Logo } from '../config'
+import { SiteMetadata, Logo, cac_logo } from '../config'
 import Img from '../components/img.astro'
 ---
 
 <div class="h-24 lg:h-16"></div>
 <footer class="text-gray-600 dark:text-gray-400">
   <div
-    class="fixed z-20 bottom-0 inset-x-0 bg-gray-100 dark:bg-gray-800 px-4 lg:px-8 py-1 lg:py-4 w-full flex items-center lg:flex-row flex-col border-t-2 border-green-300 dark:border-green-700"
+    class="fixed z-20 bottom-0 inset-x-0 bg-gray-100 dark:bg-gray-800 px-4 lg:px-8 py-1 lg:py-4 w-full flex items-center lg:flex-row flex-col border-t-2 border-yellow-300 dark:border-green-700"
   >
     <span class="flex-none flex flex-row items-center">
       <a
         class="flex title-font font-medium items-center lg:justify-start justify-center text-gray-900 dark:text:gray-100"
         href={import.meta.env.BASE_URL}
       >
-        <Img src={Logo} alt="Footer Logo" class="dark:bg-gray-100 h-6 w-6" />
+        <Img src={cac_logo} alt="Footer Logo" class="bg-gray-100 dark:bg-gray-100 h-6 w-9" />
         <span class="sr-only">Logo</span>
       </a>
       <p
-        class="text-sm text-gray-600 dark:text-gray-300 ml-2 pl-2 border-l-2 border-green-300 dark:border-green-700 py-1"
+        class="text-sm text-gray-600 dark:text-gray-300 ml-2 pl-2 border-l-2 border-yellow-300 dark:border-green-700 py-1"
       >
         © {new Date().getFullYear()} MIT licence
         <a
           href="https://hellotham.com"
-          class="ml-1 text-green-700 hover:text-pink-400 dark:text-green-300 dark:hover:text-pink-300"
+          class="ml-1 text-green-700 hover:text-pink-400 dark:text-yellow-300 dark:hover:text-pink-300"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -33,21 +33,21 @@ import Img from '../components/img.astro'
     </span>
     <span class="flex-none flex flex-row items-center">
       <p
-        class="text-sm text-gray-600 dark:text-gray-300 lg:ml-4 lg:pl-4 lg:border-l-2 lg:border-green-300 dark:lg:border-green-700 lg:py-1"
+        class="text-sm text-gray-600 dark:text-gray-300 lg:ml-4 lg:pl-4 lg:border-l-2 lg:border-yellow-300 dark:lg:border-green-700 lg:py-1"
       >
         <a
           href={import.meta.env.BASE_URL + 'privacy'}
-          class="ml-1 text-green-700 hover:text-pink-400 dark:text-green-300 dark:hover:text-pink-300"
+          class="ml-1 text-green-700 hover:text-pink-400 dark:text-yellow-300 dark:hover:text-pink-300"
         >
           Privacy Policy
         </a>
       </p>
       <p
-        class="text-sm text-gray-600 ml-4 pl-4 border-l-2 border-green-300 py-1"
+        class="text-sm text-gray-600 ml-4 pl-4 border-l-2 border-yellow-300 py-1"
       >
         <a
           href={import.meta.env.BASE_URL + 'rss.xml'}
-          class="ml-1 text-green-700 hover:text-pink-400 dark:text-green-300 dark:hover:text-pink-300"
+          class="ml-1 text-green-700 hover:text-pink-400 dark:text-yellow-300 dark:hover:text-pink-300"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -55,11 +55,11 @@ import Img from '../components/img.astro'
         </a>
       </p>
       <p
-        class="text-sm text-gray-600 dark:text-gray-300 ml-4 pl-4 border-l-2 border-green-300 py-1"
+        class="text-sm text-gray-600 dark:text-gray-300 ml-4 pl-4 border-l-2 border-yellow-300 py-1"
       >
         <a
           href={import.meta.env.BASE_URL + 'sitemap-index.xml'}
-          class="ml-1 text-green-700 hover:text-pink-400 dark:text-green-300 dark:hover:text-pink-300"
+          class="ml-1 text-green-700 hover:text-pink-400 dark:text-yellow-300 dark:hover:text-pink-300"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -75,7 +75,7 @@ import Img from '../components/img.astro'
           s.link ? (
             <a
               href={s.link}
-              class="ml-3 text-green-700 hover:text-pink-400 dark:text-green-300 dark:hover:text-pink-300"
+              class="ml-3 text-green-700 hover:text-pink-400 dark:text-yellow-300 dark:hover:text-pink-300"
               rel="noopener noreferrer"
               target="_blank"
             >
