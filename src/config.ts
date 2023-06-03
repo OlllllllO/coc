@@ -33,7 +33,7 @@ export const SiteMetadata = {
   social: [
     {
       name: 'Email',
-      link: 'info@customeroperationsconsultants.com',
+      link: 'hi@customeroperationsconsultants.com',
       icon: 'envelope',
     },
     {
@@ -50,7 +50,7 @@ export const SiteMetadata = {
   buildTime: new Date(),
 }
 
-export const Logo = '../images/customcolor_icon_transparent_background.svg'
+export const Logo = '../images/base_icon_transparent_background_adobe_express.svg'
 export const LogoImage = '../images/base_icon_transparent_background.png'
 export const FeaturedSVG = '../images/svg/undraw/undraw_team_collaboration_re_ow29.svg'
 export const DefaultSVG = '../images/svg/undraw/undraw_my_feed.svg'
@@ -97,17 +97,17 @@ export function categoryDetail(category: string | undefined) {
 export const AuthorDetail = [
   {
     name: 'Mariena Quintanilla',
-    description: 'Hello World',
-    contact: 'chris@christham.net',
-    image: '../images/authors/Chris Tham.jpg'
+    description: 'Founder and Independent Consultant',
+    contact: 'mq@customeroperationsconsultants.com',
+    image: '../images/authors/mq_headshot_square.jpg'
   }
 ]
 
 export const DefaultAuthor = {
-  name: 'Hello Astro',
-  image: '../images/authors/default.png',
-  contact: 'info@hellotham.com',
-  description: 'Astronaut'
+  name: 'Mariena Quintanilla',
+  image: '../images/authors/mq_headshot_square.jpg',
+  contact: 'mq@customeroperationsconsultants.com',
+  description: 'Founder and Independent Consultant'
 }
 
 export function authorDetail(author: string | undefined) {

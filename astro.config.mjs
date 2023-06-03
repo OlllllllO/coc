@@ -20,7 +20,7 @@ export default defineConfig({
       noExternal: ['swiper', 'leaflet'],
     },
   },
-  site: 'https://hellotham.github.io',
+  site: 'https://customeroperationsconsultants.com',
   base: '/',
   integrations: [tailwind(), sitemap(), image(), mdx(), alpinejs(), robotsTxt()],
   experimental: {
