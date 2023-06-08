@@ -56,6 +56,7 @@ export const FeaturedSVG = '../images/svg/undraw/undraw_team_collaboration_re_ow
 export const DefaultSVG = '../images/svg/undraw/undraw_my_feed.svg'
 export const DefaultImage = '../images/undraw/undraw_my_feed.png'
 export const cac_logo = '../images/base_icon_transparent_background.png'
+export const linkedin_logo = '../images/Linkedin-logo.png'
 
 export const NavigationLinks = [
   { name: 'Home', href: '' },

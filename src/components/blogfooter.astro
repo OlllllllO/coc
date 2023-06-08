@@ -1,0 +1,34 @@
+---
+import { Frontmatter, linkedin_logo } from '../config'
+import Img from '../components/img.astro'
+
+export interface Props {
+  frontmatter: Frontmatter
+}
+
+const { frontmatter } = Astro.props
+
+
+---
+  
+  <div class="bg-yellow-400 dark:bg-gray-900">
+    <div
+      class="max-w-7xl mx-auto py-4 px-4 sm:px-4 lg:py-4 lg:px-6 lg:flex lg:items-center lg:justify-evenly"
+    >
+      <h2
+        class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl"
+      >
+        <span class="block dark:text-white">This article was reposted from <Img src={linkedin_logo} class=" inline-block h-8 w-auto align-middle"/>.</span>
+      </h2>
+      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+        <div class="inline-flex rounded-md shadow items-center">
+          <a
+            href={frontmatter.linkedin}
+            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-700 hover:bg-pink-400"
+          >
+          Join the Conversation
+          </a> 
+        </div>
+      </div>
+    </div>
+  </div>

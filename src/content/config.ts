@@ -12,6 +12,7 @@ const blogCollection = defineCollection({
       coverSVG: z.string().optional(),
       coverImage: z.string().optional(),
       socialImage: z.string().optional(),
+      linkedin: z.string().optional(),
       images: z.array(z.string()).optional(),
       gallery: z.string().optional(),
       categories: z.array(z.string()).optional(),
@@ -38,3 +39,5 @@ export const collections = {
   'blog': blogCollection,
   'doc': docCollection,
 }
+
+

@@ -1,0 +1,41 @@
+---
+import { Icon } from 'astro-icon'
+import Img from '../components/img.astro'
+import type { Frontmatter } from '../config'
+import { SiteMetadata } from '../config'
+import Base from '../layouts/base.astro'
+import PageHero from '../components/pagehero.astro'
+
+const frontmatter: Frontmatter = {
+  title: 'Test',
+  description: "this is a test of the emergency broadcast system",
+  coverSVG: '../images/blog/photo_help_man_desk.jpeg',
+  socialImage: '../images/blog/photo_help_man_desk.jpeg',
+  publishDate: SiteMetadata.buildTime,
+}
+
+
+export interface Props {
+  frontmatter: Frontmatter
+}
+
+//const { frontmatter } = Astro.props
+
+const image =
+  frontmatter.coverSVG ||
+  frontmatter.coverImage ||
+  (frontmatter.images && frontmatter.images[0]) ||
+  frontmatter.socialImage 
+---
+
+<Base frontmatter={frontmatter}>
+  <header>
+    <div class="bg-black text-white h-80 xs:h-32 sm:h-64 md:h-64 lg:h-80 xl:h-80 overlfow-y-auto">
+        <Img
+            src={image}
+            alt="featured image"
+            class="object-contain h-full"
+          />  
+        </div>
+  </header>
+</Base>
